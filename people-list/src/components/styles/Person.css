@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,4 +32,4 @@
 
 .person:hover {
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
-  }
+  } */

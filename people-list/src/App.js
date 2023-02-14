@@ -1,11 +1,14 @@
-import logo from "./logo.svg";
 import "./App.css";
 import PersonList from "./components/PersonList";
+import GroceryList from "./components/GroceryList";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <PersonList />
+      {/* <PersonList /> */}
+      {/* <GroceryList /> */}
+      <Navbar />
     </div>
   );
 }
