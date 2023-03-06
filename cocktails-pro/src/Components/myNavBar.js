@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 function MyNavBar() {
   return (
     <nav>
-      {/* <Link to="/">Home</Link> | <Link to="about">About</Link> */}
       <Navbar className="bg-light">
         <Navbar.Brand as={Link} to="/" className="mx-5 px-5">
           Cocktail Pro
