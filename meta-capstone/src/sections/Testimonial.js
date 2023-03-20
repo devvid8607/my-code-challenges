@@ -10,7 +10,11 @@ function Testimonial() {
       <Carousel variant="dark" interval={1000}>
         {reviews.map((c, index) => {
           return (
-            <Carousel.Item interval={5000} style={{ color: "black" }}>
+            <Carousel.Item
+              key={index}
+              interval={5000}
+              style={{ color: "black" }}
+            >
               <div
                 style={{ height: 200, background: "#f8f9fa", color: "black" }}
               >

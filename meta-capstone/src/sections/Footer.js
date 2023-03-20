@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="mx-4 px-2">
       <div>
-        <img src="./assets/headLogo.png" />
+        <img src="./assets/headLogo.png" alt="footer" />
       </div>
       <div>
         <p>

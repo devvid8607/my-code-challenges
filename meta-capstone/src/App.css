@@ -108,6 +108,25 @@
   border-radius: 50%;
 }
 
+#booking_confirmed
+{
+  margin-top:200px;
+  min-height: 40vh;
+}
+
+#reservation_form
+{
+  /* margin-left: auto;
+  margin-right: auto;
+  width: 60%; */
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 50vh;
+  display: grid; 
+  max-width: 500px; 
+  gap: 20px
+}
+
 footer {
   margin-top: 30px;
   display: flex;
