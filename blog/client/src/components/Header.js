@@ -11,7 +11,9 @@ function Header() {
     <nav>
       <Navbar>
         <Navbar.Brand as={Link} to="/" className="mx-5 px-5">
+          {/* <Nav.Link as={Link} to="/"> */}
           <Image src={Logo} style={{ width: 150, height: 80 }}></Image>
+          {/* </Nav.Link> */}
         </Navbar.Brand>
         <Navbar.Collapse className="ml-auto justify-content-end">
           <Nav className="ml-auto mx-2">
@@ -30,12 +32,7 @@ function Header() {
             <Nav.Link as={Link} to="/?cat=cinema">
               CINEMA
             </Nav.Link>
-            {/* <Nav.Link as={Link} to="/login">
-              LOGIN
-            </Nav.Link>
-            <Nav.Link as={Link} to="/register">
-              REGISTER
-            </Nav.Link> */}
+
             <Nav.Link as={Link} to="/">
               HOME
             </Nav.Link>
@@ -45,7 +42,7 @@ function Header() {
             <span className="mt-2 mx-2">{currentUser?.username}</span>
             {currentUser ? (
               <span
-                className="mt-2 pl-2"
+                className="mt-2 "
                 style={{ color: "grey", cursor: "pointer" }}
                 onClick={logout}
               >
@@ -53,7 +50,7 @@ function Header() {
               </span>
             ) : (
               <Nav.Link as={Link} to="/login">
-                Login
+                LOGIN
               </Nav.Link>
             )}
           </Nav>

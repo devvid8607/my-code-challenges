@@ -42,13 +42,26 @@ export const login = (req, res) => {
     if (!isPasswordCorrect)
       return res.status(401).json("User Not Authenticated, Please Try Again");
 
-    const { password, ...restOfTheData } = data[0];
-
     const token = jwt.sign({ id: data[0].id }, "jwtkey");
-    restOfTheData["jwt"] = token;
+    console.log("login token:" + token);
+    const { password, ...other } = data[0];
 
-    res.status(200).json(restOfTheData);
+    res
+      .cookie("access_token", token, {
+        httpOnly: true,
+      })
+      .status(200)
+      .json(other);
+
+    // const { password, ...restOfTheData } = data[0];
+
+    // const token = jwt.sign({ id: data[0].id }, "jwtkey");
+    // restOfTheData["jwt"] = token;
+
+    // res.status(200).json(restOfTheData);
   });
 };
 
-export const logout = (req, res) => {};
+export const logout = (req, res) => {
+  res.clearCookie("access_token").status(200).json("user logged out");
+};

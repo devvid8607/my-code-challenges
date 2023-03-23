@@ -16,6 +16,14 @@
   text-align: center;
 }
 
+.link
+{
+  font-size: 15px;
+  text-decoration: none;
+  color: teal;
+  font-weight: bold;
+}
+
 .posts
 {
   display: flex;
